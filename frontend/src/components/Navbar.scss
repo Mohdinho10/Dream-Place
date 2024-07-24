@@ -100,7 +100,7 @@ nav {
         border: none;
         border-radius: 25px;
         position: relative;
-        z-index: 100000;
+        z-index: 2;
 
         .notification {
           position: absolute;
@@ -121,7 +121,7 @@ nav {
     .register {
       background: #fece51;
       border-radius: 25px;
-      z-index: 10000;
+      z-index: 2;
     }
 
     .menu-icon {
