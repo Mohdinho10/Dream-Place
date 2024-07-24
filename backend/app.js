@@ -6,6 +6,7 @@ import { notFound, errorHandler } from "./middleware/ErrorMiddleware.js";
 import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
+import path from "path";
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.use(
 );
 
 if (process.env.NODE_ENV === "production") {
+  const __dirname = path.resolve();
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
   app.get("*", (req, res) =>
