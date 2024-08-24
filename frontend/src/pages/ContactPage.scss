@@ -1,0 +1,54 @@
+.pageHeader {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.contactLandlord {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.landlordName {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.messageForm {
+  margin-top: 0.5rem;
+}
+
+.messageDiv {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.messageLabel {
+  margin-bottom: 0.5rem;
+}
+
+.textarea {
+  box-shadow: rgba(0, 0, 0, 0.11);
+  // border: none;
+  // background: #ffffff;
+  border-radius: 1rem;
+  resize: none;
+  height: 3rem;
+  width: 50%;
+  height: 300px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+button.primaryButton {
+  background: #fece51;
+  border-radius: 25px;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  // margin: 0;
+}
