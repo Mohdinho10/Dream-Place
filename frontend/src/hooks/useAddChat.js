@@ -11,7 +11,7 @@ export function useAddChat() {
     mutationFn: async ({ receiverId }) => {
       try {
         const { data } = await axios.post(
-          `${BASE_URL}/chats`,
+          `${BASE_URL}/api/chats`,
           { receiverId },
           {
             withCredentials: true,

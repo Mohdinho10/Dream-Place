@@ -7,7 +7,7 @@ export function useGetPost(id) {
     queryKey: ["post", id],
     queryFn: async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/posts/${id}`, {
+        const response = await axios.get(`${BASE_URL}/api/posts/${id}`, {
           withCredentials: true,
         });
         console.log(response.data);

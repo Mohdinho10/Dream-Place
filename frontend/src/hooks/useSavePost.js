@@ -16,7 +16,7 @@ export function useSavePost() {
       }
 
       try {
-        await axios.post(`${BASE_URL}/posts/save`, postId, {
+        await axios.post(`${BASE_URL}/api/posts/save`, postId, {
           withCredentials: true,
         });
       } catch (error) {

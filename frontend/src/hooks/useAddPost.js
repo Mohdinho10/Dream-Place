@@ -10,7 +10,7 @@ export function useAddPost() {
   const { mutate: addPost, isPending: isAddPost } = useMutation({
     mutationFn: async (postData) => {
       try {
-        const { data } = await axios.post(`${BASE_URL}/posts`, postData, {
+        const { data } = await axios.post(`${BASE_URL}/api/posts`, postData, {
           withCredentials: true,
         });
         console.log(data);

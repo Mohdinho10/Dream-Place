@@ -7,7 +7,7 @@ export function useProfilePost() {
     queryKey: ["posts"],
     queryFn: async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/posts/profile`, {
+        const response = await axios.get(`${BASE_URL}/api/posts/profile`, {
           withCredentials: true,
         });
         return response?.data;

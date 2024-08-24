@@ -8,7 +8,7 @@ export function useReadMessage(id) {
     queryKey: ["message", id],
     queryFn: async () => {
       try {
-        const response = await axios.put(`${BASE_URL}/chats/read/${id}`, {
+        const response = await axios.put(`${BASE_URL}/api/chats/read/${id}`, {
           withCredentials: true,
         });
         console.log(response.data);

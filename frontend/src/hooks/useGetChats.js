@@ -14,7 +14,7 @@ export function useGetChats() {
     queryKey: ["chats"],
     queryFn: async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/chats`, {
+        const response = await axios.get(`${BASE_URL}/api/chats`, {
           withCredentials: true,
         });
         return response?.data;

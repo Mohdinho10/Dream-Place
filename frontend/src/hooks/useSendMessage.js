@@ -14,7 +14,7 @@ export function useSendMessage(chatId) {
     mutationFn: async (text) => {
       try {
         const response = await axios.post(
-          `${BASE_URL}/chats/message/${chatId}`,
+          `${BASE_URL}/api/chats/message/${chatId}`,
           text,
           {
             withCredentials: true,

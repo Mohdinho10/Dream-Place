@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import Pin from "./Pin";
 
 function Map({ items }) {
-  const position = [51.505, -0.09];
+  // const position = [51.505, -0.09];
   console.log(items);
 
   return (
