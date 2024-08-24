@@ -6,7 +6,7 @@ import Pin from "./Pin";
 
 function Map({ items }) {
   // const position = [51.505, -0.09];
-  console.log(items);
+  // console.log(items);
 
   return (
     <MapContainer

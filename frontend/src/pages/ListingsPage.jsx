@@ -30,7 +30,7 @@ function ListingsPage() {
 
   console.log(debounceQuery);
   const { isPending, posts } = useGetPosts(debounceQuery);
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <>
