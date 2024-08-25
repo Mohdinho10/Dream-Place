@@ -17,6 +17,7 @@ const port = process.env.PORT;
 
 // middleware
 app.use(express.json());
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 // cookie parser middleware
 app.use(cookieParser());
@@ -27,6 +28,10 @@ app.use(
   })
 );
 
+app.use("/api/users", userRoutes);
+app.use("/api/posts", postRoutes);
+app.use("/api/chats", chatRoutes);
+
 if (process.env.NODE_ENV === "production") {
   const __dirname = path.resolve();
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
@@ -35,10 +40,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
   );
 }
-
-app.use("/api/users", userRoutes);
-app.use("/api/posts", postRoutes);
-app.use("/api/chats", chatRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
